@@ -631,14 +631,6 @@ submitBtn.addEventListener("click", async (e) => {
     outputHolderEl.innerHTML = "";
     submitBtn.disabled = true;
 
-    textareaEl.value = ` https://www.openstreetmap.org/relation/114686
-      https://www.openstreetmap.org/relation/2556679
-      https://www.openstreetmap.org/relation/5999648
-      https://www.openstreetmap.org/relation/5999655
-      https://www.openstreetmap.org/relation/6087837
-      https://www.openstreetmap.org/relation/6442501
-    `;
-
     if (textareaEl.value.trim() === "") throw new Error("Invalid Input...");
 
     outputHolderEl.innerHTML = `
