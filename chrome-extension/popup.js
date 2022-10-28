@@ -656,8 +656,6 @@ submitBtn.addEventListener("click", async (e) => {
 
     await OutputGenerator.initiateProcessing(issues);
 
-    console.log(OutputGenerator.outputText);
-
     let status = "success";
     let output = [...OutputGenerator.outputText];
     let message = `Processed ${output.length} issue(s)`;
